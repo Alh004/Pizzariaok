@@ -1,0 +1,15 @@
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.csproj.AssemblyReference.cache
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.AssemblyInfoInputs.cache
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.AssemblyInfo.cs
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.csproj.CoreCompileInputs.cache
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/bin/Debug/net7.0/Pizzaria
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/bin/Debug/net7.0/Pizzaria.deps.json
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/bin/Debug/net7.0/Pizzaria.runtimeconfig.json
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/bin/Debug/net7.0/Pizzaria.dll
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/bin/Debug/net7.0/Pizzaria.pdb
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.dll
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/refint/Pizzaria.dll
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.pdb
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/Pizzaria.genruntimeconfig.cache
+/Users/ali2424/RiderProjects/Pizzaria/Pizzaria/obj/Debug/net7.0/ref/Pizzaria.dll

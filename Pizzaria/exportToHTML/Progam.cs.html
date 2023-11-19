@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Progam.cs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #57a64a;}
+.s1 { color: #dcdcdc;}
+.s2 { color: #569cd6;}
+.s3 { color: #b4b4b4;}
+.s4 { color: #d69d85;}
+.s5 { color: #b5cea8;}
+</style>
+</head>
+<body bgcolor="#1e1e1e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Progam.cs</font>
+</center></td></tr></table>
+<pre><span class="s0">// See https://aka.ms/new-console-template for more information</span>
+
+<span class="s2">using </span><span class="s1">Pizzaria</span><span class="s3">;</span>
+
+<span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;Velkommen til &quot;</span><span class="s3">);</span>
+
+<span class="s0">//Console.WriteLine(&quot;Du kan enten lave dine egen pizza eller lave din egen&quot;);</span>
+
+<span class="s1">Pizza pizza1 = </span><span class="s2">new </span><span class="s1">Pizza</span><span class="s3">(</span><span class="s4">&quot;Glutenfri&quot;</span><span class="s3">, </span><span class="s4">&quot;Tun&quot;</span><span class="s3">, </span><span class="s5">65</span><span class="s3">, </span><span class="s4">&quot;Lille&quot;</span><span class="s3">);</span>
+
+<span class="s1">PizzaListe pizzaListe = </span><span class="s2">new </span><span class="s1">PizzaListe</span><span class="s3">();</span>
+<span class="s0">//pizzaListe.Tilføj(pizza1);</span>
+
+<span class="s1">Pizza pizza2 = </span><span class="s2">new </span><span class="s1">Pizza</span><span class="s3">(</span><span class="s4">&quot;Fuldkorn&quot;</span><span class="s3">, </span><span class="s4">&quot;Kylling&quot;</span><span class="s3">, </span><span class="s5">55</span><span class="s3">, </span><span class="s4">&quot;Stor&quot;</span><span class="s3">);</span>
+<span class="s0">//pizzaListe.Tilføj(pizza2);</span>
+
+<span class="s1">Pizza pizza3 = </span><span class="s2">new </span><span class="s1">Pizza</span><span class="s3">(</span><span class="s4">&quot;Hvedmel&quot;</span><span class="s3">, </span><span class="s4">&quot;Vegetar&quot;</span><span class="s3">, </span><span class="s5">75</span><span class="s3">, </span><span class="s4">&quot;Mellem&quot;</span><span class="s3">);</span>
+<span class="s0">//pizzaListe.Tilføj(pizza3);</span>
+
+
+
+
+
+<span class="s1">Kunde kunde1=</span><span class="s2">new </span><span class="s1">Kunde</span><span class="s3">(</span><span class="s5">10</span><span class="s3">,</span><span class="s4">&quot;Ali&quot;</span><span class="s3">,</span><span class="s4">&quot;42659793&quot;</span><span class="s3">);</span>
+<span class="s0">//Console.WriteLine(kunde1);</span>
+
+<span class="s1">Kunde kunde2 = </span><span class="s2">new </span><span class="s1">Kunde</span><span class="s3">(</span><span class="s5">20</span><span class="s3">,</span><span class="s4">&quot;Haris&quot;</span><span class="s3">, </span><span class="s4">&quot;42658356&quot;</span><span class="s3">);</span>
+<span class="s0">//Console.Writeline(kunde2);</span>
+
+<span class="s1">Kunde kunde3 = </span><span class="s2">new </span><span class="s1">Kunde</span><span class="s3">(</span><span class="s5">30</span><span class="s3">,</span><span class="s4">&quot;Amin&quot;</span><span class="s3">, </span><span class="s4">&quot;65239845&quot;</span><span class="s3">);</span>
+<span class="s0">//Console.WriteLine(kunde3);</span>
+
+
+
+
+<span class="s1">Køb koeb1=</span><span class="s2">new </span><span class="s1">Køb</span><span class="s3">(</span><span class="s1">pizza1</span><span class="s3">, </span><span class="s1">kunde1</span><span class="s3">);</span>
+<span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">koeb1</span><span class="s3">);</span>
+
+<span class="s1">Køb koeb2 = </span><span class="s2">new</span><span class="s3">(</span><span class="s1">pizza2</span><span class="s3">, </span><span class="s1">kunde2</span><span class="s3">);</span>
+<span class="s0">//Console.WriteLine(koeb2);</span>
+
+<span class="s1">Køb koeb3 = </span><span class="s2">new</span><span class="s3">(</span><span class="s1">pizza3</span><span class="s3">, </span><span class="s1">kunde3</span><span class="s3">);</span>
+<span class="s0">//Console.WriteLine(koeb3);</span>
+
+
+<span class="s1">List&lt;Pizza&gt; pizzas = pizzaListe</span><span class="s3">.</span><span class="s1">HentAllePizzas</span><span class="s3">();</span>
+
+<span class="s2">for </span><span class="s3">(</span><span class="s2">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s3">; </span><span class="s1">i &lt; pizzas</span><span class="s3">.</span><span class="s1">Count</span><span class="s3">; </span><span class="s1">i++</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">pizzas</span><span class="s3">[</span><span class="s1">i</span><span class="s3">]);</span>
+<span class="s3">}</span>
+
+<span class="s0">//Console.WriteLine(&quot;Vi har følgende ingredienser&quot;);</span>
+<span class="s0">//Console.WriteLine(&quot;Bunde = Glutenfri, Hvedemel, Fuldkorn&quot;);</span>
+<span class="s0">//Console.WriteLine(&quot;Toppings= Kylling, Vegetar. Tun&quot;);</span>
+<span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;Du kan vælge imellem 3 størresler Stor, Mellem, Lille&quot;</span><span class="s3">);</span>
+
+
+
+<span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;Med Tun&quot;</span><span class="s3">);</span>
+
+<span class="s1">List&lt;Pizza&gt; pizzaMedTun = pizzaListe</span><span class="s3">.</span><span class="s1">HentFraTopping</span><span class="s3">(</span><span class="s4">&quot;Tun&quot;</span><span class="s3">);</span>
+
+<span class="s0">//for (int i = 0; i &lt; pizzaMedTun.Count; i++)</span>
+<span class="s0">//{</span>
+<span class="s0">//    Console.WriteLine(pizzaMedTun[i]);</span>
+<span class="s0">//}</span>
+
+<span class="s2">foreach </span><span class="s3">(</span><span class="s1">Pizza pizza </span><span class="s2">in </span><span class="s1">pizzaMedTun</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">pizza</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+    
+    
+
+
+<span class="s0">/* 
+ * BRUG AF KUNDEKATALOG 
+ */</span>
+
+<span class="s1">KundeKatalog katalog = </span><span class="s2">new </span><span class="s1">KundeKatalog</span><span class="s3">();</span>
+
+<span class="s1">katalog</span><span class="s3">.</span><span class="s1">Tilføj</span><span class="s3">(</span><span class="s1">kunde1</span><span class="s3">);</span>
+
+<span class="s1">katalog</span><span class="s3">.</span><span class="s1">Tilføj</span><span class="s3">(</span><span class="s2">new </span><span class="s1">Kunde</span><span class="s3">(</span><span class="s5">11</span><span class="s3">, </span><span class="s4">&quot;mo&quot;</span><span class="s3">, </span><span class="s4">&quot;42657642&quot;</span><span class="s3">));</span>
+
+<span class="s0">//Console.WriteLine(katalog);</span>
+
+<span class="s0">//Console.WriteLine(katalog.HentKundeUdFraTlf(&quot;42657642&quot;));</span>
+
+<span class="s2">try</span>
+<span class="s3">{</span>
+    <span class="s1">Kunde kunde901 = katalog</span><span class="s3">.</span><span class="s1">HentKunde</span><span class="s3">(</span><span class="s5">901</span><span class="s3">);</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">kunde901</span><span class="s3">);</span>
+<span class="s3">}</span>
+<span class="s2">catch </span><span class="s3">(</span><span class="s1">KeyNotFoundException knfe</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;FEJL: &quot; </span><span class="s1">+ knfe</span><span class="s3">.</span><span class="s1">Message</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+<span class="s2">try</span>
+<span class="s3">{ </span><span class="s0">// her kan der måske ske en exception</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">katalog</span><span class="s3">.</span><span class="s1">HentKunde</span><span class="s3">(</span><span class="s5">222</span><span class="s3">));</span>
+<span class="s3">}</span>
+<span class="s2">catch</span><span class="s3">(</span><span class="s1">KeyNotFoundException knfe</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;FEJL: &quot; </span><span class="s1">+ knfe</span><span class="s3">.</span><span class="s1">Message</span><span class="s3">);</span>
+<span class="s3">}</span>
+<span class="s2">catch</span><span class="s3">(</span><span class="s1">Exception e</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">e</span><span class="s3">.</span><span class="s1">Message</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+<span class="s2">try</span>
+<span class="s3">{</span>
+    <span class="s1">pizza1</span><span class="s3">.</span><span class="s1">Pris = </span><span class="s5">45</span><span class="s3">;</span>
+    <span class="s1">pizza1</span><span class="s3">.</span><span class="s1">Pris = -</span><span class="s5">34</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">catch</span><span class="s3">(</span><span class="s1">ArgumentException ae</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">( </span><span class="s1">ae</span><span class="s3">.</span><span class="s1">Message</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+<span class="s2">try</span>
+<span class="s3">{</span>
+    <span class="s1">pizza2</span><span class="s3">.</span><span class="s1">Pris = -</span><span class="s5">111</span><span class="s3">;</span>
+<span class="s3">}</span>
+<span class="s2">catch </span><span class="s3">(</span><span class="s1">ArgumentException ae</span><span class="s3">)</span>
+<span class="s3">{</span>
+    <span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s1">ae</span><span class="s3">.</span><span class="s1">Message</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+
+<span class="s1">Console</span><span class="s3">.</span><span class="s1">WriteLine</span><span class="s3">(</span><span class="s4">&quot;SLUT&quot;</span><span class="s3">);</span>
+
+
+
+
+
+
+
+</pre>
+</body>
+</html>
